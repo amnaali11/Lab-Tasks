@@ -1,0 +1,37 @@
+table td{
+    width:100px;
+    height:30px;
+    font-family:Tahoma,Times,serif;
+    font-weight:bold;
+}
+table th{
+    width:100px;
+    height:30px;
+    font-family:Verdana,sans-serif;
+    font-weight:bolder;
+}
+nav a{
+color:black;
+font-family:Verdana,sans-serif;
+font-size:large;
+font-weight:bold;
+}
+
+body{
+    background-color:rgba(64, 157, 160, 0.178);
+}
+nav a:hover{
+color:white;
+font-size: x-large;
+}
+a{
+    color:black;
+    font-family:Verdana,sans-serif;
+    font-size:large;
+    font-weight: bold;
+
+    }
+    a:hover{
+        color:white;
+        font-size: x-large;}
+        
