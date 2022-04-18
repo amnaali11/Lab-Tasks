@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <span class="game1" >X </span>
+    <span class="game2"> O</span>
+
+    <div class="display">
+        <div class="x" id="x">X</div>
+        <div class="o" id="o">O</div>
+
+        <div class="newgame" id="ngame" onclick="repeat()">NEW GAME</div>
+    </div>
+
+<div class=" square" id="s1" onclick="game(this.id)"></div>
+<div class=" square" id="s2" onclick="game(this.id)"></div>
+<div class=" square" id="s3" onclick="game(this.id)"></div><br><br>
+<div class=" square" id="s4" onclick="game(this.id)"></div>
+<div class=" square" id="s5" onclick="game(this.id)"></div>
+<div class=" square" id="s6" onclick="game(this.id)"></div>
+<div class=" square" id="s7" onclick="game(this.id)"></div>
+<div class=" square" id="s8" onclick="game(this.id)"></div>
+<div class=" square" id="s9" onclick="game(this.id)"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
