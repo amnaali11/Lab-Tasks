@@ -2,6 +2,7 @@
 let arr=[],arr1=[];
 let turn="X";
 
+
 function end(){
 setInterval(function(){
     document.getElementById("ngame").innerHTML+="."
@@ -10,16 +11,29 @@ setTimeout(function(){
     location.reload();
 },4000)
 
+}
+function nowin()
+{
+    for(let i=1;i<10;i++){
+        arr[i]=document.getElementById("s"+ i).innerHTML;
+        }
 
-
-
+if(arr[1]!=arr[2]&&arr[2]!=arr[3]&&arr[3]!=arr[4]&&arr[4]!=arr[5]&&arr[5]!=arr[6]&&arr[7]!=arr[8]&&arr[8]!=arr[9]&&arr[1]!=""
+&&arr[2]!=""&&arr[3]!=""&&arr[4]!=""&&arr[5]!=""&&arr[6]!=""&&arr[7]!=""&&arr[8]!=""&&arr[9]!="")
+{
+    document.getElementById("ngame").innerHTML="No winner";
+    end();
 
 }
+}
+
+
 function winner(){
-for(let i=1;i<10;i++){
-arr1[i]=document.getElementById("s"+ i);
-arr[i]=document.getElementById("s"+ i).innerHTML;
-}
+    for(let i=1;i<10;i++){
+        arr1[i]=document.getElementById("s"+ i);
+        arr[i]=document.getElementById("s"+ i).innerHTML;
+        }
+
 if(arr[1]==arr[2]&&arr[2]==arr[3]&&arr[1]!="")
 {   
 
@@ -149,16 +163,9 @@ document.getElementById("o").style.background="aliceblue";
     }
 
 winner();
-
-
-}
-function r(id){
-
-  document.getElementById(id).innerHTML="jdhjfh";
-
+nowin();
 
 }
-
 
 
 
